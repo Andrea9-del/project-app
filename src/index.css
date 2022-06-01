@@ -1,0 +1,23 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto+Flex:regular);
+@import url(https://fonts.googleapis.com/css?family=Noto+Sans+Osage:regular);
+@import url(https://fonts.googleapis.com/css?family=Fira+Code:300,regular,500,600,700);
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*{
+    margin: 0;
+    padding: 0
+}
+.log-in{
+    background-image: url('./assests/log in bg.jpg');
+    background-size: cover;
+}
+.sign-up{
+    background-image: url('./assests/sign-in\ bg.jpg');
+    background-size: cover;
+}
+.toDo{
+    background-image: url('./assests/app.png');
+    background-size: cover;
+}
