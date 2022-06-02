@@ -22,7 +22,7 @@ const TodoList = ({list, deleteTodo}) =>{
         navigate('/')
       };
     return (
-        <div className="bg-amber-200 text-xl px-4 py-4 ">
+        <div className="bg-teal-100 text-xl px-4 py-4 ">
                     {list.map(todo => {
                         return (
                             <ul key = {todo.id}>
