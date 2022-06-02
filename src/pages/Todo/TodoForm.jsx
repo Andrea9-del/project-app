@@ -12,10 +12,12 @@ const TodoForm = ({onSubmit}) =>{
     }
 
     return (
-        <div>
-            <form onSubmit={handleSubmit}>
-                <input type="text" className="w-72 py-1 px-3 focus:outline-none rounded-xl text-gray-800 border-2 border-blue-500" value = {input} onChange ={(e) => setInput(e.target.value)}/>
-                <button className="px-3 py-1 border-2 border-white ml-3 rounded-lg focus:outline-none focus:bg-white focus:text-blue-500" disabled = {input === ''}>Add Todo</button>
+        <div className="shadow-2xl w-screen opacity-85  ">
+            <form onSubmit={handleSubmit} className='w-full flex items-center justify-center '>
+                <div className="bg-gray-400 h-20 flex items-center justify-center w-full px-16  ">
+                    <input type="text" className="border-b-2  border-amber-700 outline-none bg-transparent w-72  text-black " value = {input} onChange ={(e) => setInput(e.target.value)}/>
+                    <button className="px-3 py-1 border-2 border-white ml-3 rounded-lg focus:outline-none focus:bg-white focus:text-amber-500" disabled = {input === ''}>Add Todo</button>
+                </div>
             </form>
         </div>
     );

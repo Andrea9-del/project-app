@@ -49,11 +49,7 @@ export const sendPasswordReset = async (email) =>{
   }
 };
 
-export const logout = () => {
-  
-  return signOut(Auth);
 
-};
 
 // Initialize Firebase
 const app = initializeApp(firebaseConfig);

@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom"
-import {  useEffect ,useState } from "react"
+import { useState } from "react"
 import TodoForm  from "./TodoForm"
 import TodoList from "./TodoList";
 import {doc, getDoc} from "firebase/firestore";
@@ -33,18 +33,15 @@ const TodoApp = () => {
         setTodos(updateTodo);
     }
     return(
-        <div className="bg-gradient-to-r from-purple-800 to-blue-600">
-        <span className="text-3xl text-white m-2">Welcome {name ? `${name}!`: ''} </span><br />
-        <div className="flex text-white text-xl items-center justify-center w-full  border-2 min-h-screen">
-        <div className="flex flex-col">
-            <TodoForm onSubmit={onSubmit} /> 
-            <TodoList list={todos} deleteTodo={deleteTodo}  />
-        </div>
-        
-        
-    </div> 
-
-    </div>
+        <div className="w-screen h-screen">
+            <span className="text-3xl flex justify-center">Welcome to my Todo-App</span><br />
+            <div className="">
+                <TodoForm onSubmit={onSubmit} /> 
+                <div className="  ">
+                  <TodoList list={todos} deleteTodo={deleteTodo}  />
+                </div>
+            </div>
+        </div> 
     );
 
 };

@@ -7,6 +7,7 @@ import SignUp from '../pages/sign-up/SignUp';
 import '../index.css'
 
 
+
 const App = () => {
     const [user, setUser] = useState(localStorage.getItem('user') || false)
     return (
@@ -17,6 +18,7 @@ const App = () => {
                 <Route path='/sign-up' element={<SignUp setUser={setUser}/>}/>
                 <Route path='/reset-password' element={<ResetPassword/>}/>
                 <Route path='/todo' element={<TodoApp/>}/>
+                
             </Routes>
     
     </BrowserRouter>
