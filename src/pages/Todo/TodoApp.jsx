@@ -37,7 +37,7 @@ const TodoApp = () => {
             <span className="text-3xl flex justify-center">Welcome to my Todo-App</span><br />
             <div className="">
                 <TodoForm onSubmit={onSubmit} /> 
-                <div className="  ">
+                <div className=" py-4 bg-white ">
                   <TodoList list={todos} deleteTodo={deleteTodo}  />
                 </div>
             </div>

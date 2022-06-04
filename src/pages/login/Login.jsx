@@ -2,7 +2,6 @@ import {signInWithEmailAndPassword} from 'firebase/auth';
 import {Auth} from '../../firebase';
 import { Link, useNavigate } from 'react-router-dom';
 import { useState } from 'react';
-import { link} from 'react-router-dom';
 import { signInWithGoogle} from '../../firebase';
 import {doc, getDoc} from 'firebase/firestore';
 import {db} from '../../firebase';
@@ -26,7 +25,7 @@ const Login =({setUser}) =>{
                 setUid(user.uid)
                 setUser(localStorage.setItem ('user',user))
                 navigate('/todo', {state:{uid}})
-                console.log(user);
+                console.log(user.uid);
             
                 // ...
             })
@@ -55,7 +54,7 @@ const Login =({setUser}) =>{
                         onChange= {(e)=>setPassword (e.target.value)}
                         /> <br />
                         <div className='w-full text-center'>
-                       <button type='submit' className='text-red-700  pt-4 text-2xl'>Sign In</button> <br />
+                       <button type='submit' className='text-red-700  pt-4 text-2xl border-2 border-white'>Sign In</button> <br />
                        </div>
                     </form>
                     
