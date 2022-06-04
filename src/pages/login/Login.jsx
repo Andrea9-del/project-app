@@ -48,13 +48,13 @@ const Login =({setUser}) =>{
                         onChange= {(e) =>setEmail (e.target.value)} 
                         /> <br />
                         <label className='  text-xl pt-10' >Password</label> <br />
-                        <input className='border-b-2 border-red-700 outline-none bg-transparent '
+                        <input className='border-b-2 border-red-700 outline-none bg-transparent  '
                         type="password"  
                         value ={password}
                         onChange= {(e)=>setPassword (e.target.value)}
                         /> <br />
-                        <div className='w-full text-center'>
-                       <button type='submit' className='text-red-700  pt-4 text-2xl border-2 border-white'>Sign In</button> <br />
+                        <div className='w-full text-center pt-2'>
+                       <button type='submit' className='text-red-700  p-2 text-2xl border-2 border-black rounded-md hover:border-white'>Sign In</button> <br />
                        </div>
                     </form>
                     

@@ -41,7 +41,7 @@ const SignUp = ({setUser}) => {
                     <input  className="border-b-2  border-black outline-none bg-transparent " type='email' value={email} onChange={(e) => setEmail(e.target.value)}/>
                     <label className="mr-2 font-roboto">Enter your password</label>
                     <input  className="border-b-2  border-black outline-none bg-transparent " type='password' value={password} onChange={(e) => setPassword(e.target.value)}/>
-                    <button className="mt-4 text-blue-600 text-xl">Sign Up</button>
+                    <button className="mt-4 text-blue-600 text-xl border-2 border-black rounded-md hover:border-white">Sign Up</button>
                 </div>
              </div>
             

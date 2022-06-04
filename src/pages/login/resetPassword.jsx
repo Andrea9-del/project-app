@@ -33,7 +33,7 @@ const ResetPassword = () => {
                     Already have an account? <br/><Link to="/"  className="text-blue-500 text-2xl pt-4">Sign In</Link>
                 </div>
                 <div  className="w-100 text-center text-xl pt-6">
-                    Need an account ? <br /><Link to="/sign-up" className="text-blue-500 text-2xl pt-4">Sign Up</Link>
+                    Need an account ? <br /><Link to="/sign-up" className="text-blue-500 text-2xl pt-4 ">Sign Up</Link>
                 </div>
      
             </form>
