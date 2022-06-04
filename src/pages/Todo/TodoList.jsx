@@ -41,7 +41,9 @@ const TodoList = ({list, deleteTodo}) =>{
                             </ul>
                         )
                     })}
-                    <button className=" flex flex-row justify-center text-2xl text-gray-700 pl-2 border-2 border-white rounded-md p-2 text-center hover:bg-amber-700" onClick = {logout}> Log out</button>
+                    <div className="flex flex-row justify-center pt-4">
+                        <button className="  text-2xl text-gray-700  border-2 border-white rounded-md p-2 text-center hover:bg-amber-700" onClick = {logout}> Log out</button>
+                    </div>
         </div>
     );
 }
